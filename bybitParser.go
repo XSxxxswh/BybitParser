@@ -1,11 +1,6 @@
 package bybitParser
 
-import (
-	"fmt"
-	"math"
-)
-
-func ExchangeRate(curr, amount, size) float64{
+func ExchangeRate(curr, amount, size) float64 {
 	var awerage float64
 	prices, err := GetRate(curr, amount, size)
 	if err != nil {
