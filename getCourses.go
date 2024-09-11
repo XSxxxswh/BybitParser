@@ -1,4 +1,4 @@
-package bybitParser
+package github.com/XSxxxswh/BybitParser
 
 import (
 	"bytes"

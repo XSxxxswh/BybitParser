@@ -1,4 +1,4 @@
-package bybitParser
+package github.com/XSxxxswh/BybitParser
 
 func ExchangeRate(curr, amount, size) float64 {
 	var awerage float64
