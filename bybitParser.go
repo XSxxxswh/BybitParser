@@ -5,9 +5,9 @@ import (
 	"math"
 )
 
-func ExchangeRate() {
+func ExchangeRate(curr, amount, size) float64{
 	var awerage float64
-	prices, err := GetRate("RUB", "100000", "10")
+	prices, err := GetRate(curr, amount, size)
 	if err != nil {
 		panic(err)
 	}
@@ -26,5 +26,5 @@ func ExchangeRate() {
 	}
 	awerage = sum / 5
 
-	fmt.Println(math.Round(awerage*100) / 100)
+	return awerage
 }
